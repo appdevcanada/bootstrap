@@ -1,0 +1,16 @@
+header {
+    min-height: 40%;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.nav-link a:hover {
+    text-shadow: 4px 4px 3px 1px hsl(180, 50%, 50%) !important;
+    -webkit-transition: 1s linear 0s;
+    -moz-transition: 1s linear 0s;
+    -o-transition: 1s linear 0s;
+    transition: 1s linear 0s !important;
+    outline: 0 none;
+}
