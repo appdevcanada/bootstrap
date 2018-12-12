@@ -36,6 +36,20 @@ header,
     margin: auto;
 }
 
+.img_std {
+    height: 128px;
+    width: 96px;
+}
+
+.card-img-top {
+    height: 400px;
+    width: 400px;
+}
+
+.alg_jfy {
+    text-align: justify;
+}
+
 .bg-dark {
     background-color: hsl(0, 0%, 0%) !important;
 }
