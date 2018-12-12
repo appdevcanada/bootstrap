@@ -1,16 +1,104 @@
-header {
-    min-height: 40%;
+/*************************************************
+            DEFAULTS
+*************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+header,
+#me_ctn {
+    height: calc(100vh - 60vh);
+    width: 100%;
+    align-content: center;
+    margin: 0;
+}
+
+#me {
+    border-radius: 50%;
+    height: 50% !important;
+    margin: auto;
 }
 
 .bg-dark {
-    background-color: black !important;
+    background-color: hsl(0, 0%, 0%) !important;
 }
 
-.nav-link a:hover {
-    text-shadow: 4px 4px 3px 1px hsl(180, 50%, 50%) !important;
+a.nav-link {
     -webkit-transition: 1s linear 0s;
     -moz-transition: 1s linear 0s;
     -o-transition: 1s linear 0s;
     transition: 1s linear 0s !important;
-    outline: 0 none;
+}
+
+a.nav-link:hover {
+    text-shadow: 0 0 8px hsl(170, 70%, 70%) !important;
+}
+
+
+/*************************************************
+            MEDIAS QUERIES
+*************************************************/
+@media (max-width: 599px) {
+
+    .container {
+        width: 100%;
+    }
+
+    main {
+        min-height: calc(100vh - 206px);
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+
+    main {
+        min-height: calc(100vh - 206px);
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1299px) {
+
+    main {
+        min-height: calc(100vh - 206px);
+    }
+
+    footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    main {
+        min-height: calc(100vh - 206px);
+    }
+
+    footer {
+        font-size: 1.4rem;
+    }
 }
