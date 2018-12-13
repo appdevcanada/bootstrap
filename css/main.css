@@ -31,19 +31,12 @@ header,
 }
 
 #me {
-    border-radius: 50%;
     height: 50% !important;
-    margin: auto;
 }
 
 .img_std {
-    height: 128px;
     width: 96px;
-}
-
-.card-img-top {
-    height: 400px;
-    width: 400px;
+    height: 128px;
 }
 
 .alg_jfy {
