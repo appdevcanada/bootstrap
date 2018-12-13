@@ -72,45 +72,25 @@ a.nav-link:hover {
     .container {
         width: 100%;
     }
-
-    main {
-        min-height: calc(100vh - 206px);
-    }
-
-    footer {
-        font-size: 1.2rem;
-    }
 }
 
 @media (min-width: 600px) and (max-width:999px) {
 
-    main {
-        min-height: calc(100vh - 206px);
-    }
-
-    footer {
-        font-size: 1.3rem;
+    #img_contact {
+        width: 80%;
     }
 }
 
 @media (min-width: 1000px) and (max-width:1299px) {
 
-    main {
-        min-height: calc(100vh - 206px);
-    }
-
-    footer {
-        font-size: 1.4rem;
+    #img_contact {
+        width: 70%;
     }
 }
 
 @media (min-width: 1300px) {
 
-    main {
-        min-height: calc(100vh - 206px);
-    }
-
-    footer {
-        font-size: 1.4rem;
+    #img_contact {
+        width: 60%;
     }
 }

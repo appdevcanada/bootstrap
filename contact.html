@@ -46,31 +46,32 @@
         </div>
         <div class="card-deck">
             <div class="card mb-3 border border-dark">
-                <img class="card-img-top p-1 rounded-top" src="img/contact.png" alt="Contact Me!">
+                <div class="text-center">
+                    <img class="card-img-top p-1 rounded-top" id="img_contact" src="img/contact.png" alt="Contact Me!"></div>
                 <div class="card-body">
                     <form class="needs-validation" novalidate id="form_val">
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">First Name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Type your First name" value="" required>
+                                <input type="text" class="form-control" id="first_name" placeholder="Type your First name" required>
                                 <div class="invalid-feedback">
                                     Please provide your First name.
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom02">Last Name</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Type your Last name" value="" required>
+                                <input type="text" class="form-control" id="last_name" placeholder="Type your Last name" required>
                                 <div class="invalid-feedback">
                                     Please provide your Last name.
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="validationCustomUsername">e-Mail</label>
+                                <label for="validationCustomEmail">e-Mail</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                        <span class="input-group-text" id="email">@</span>
                                     </div>
-                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Type your e-Mail" aria-describedby="inputGroupPrepend" required>
+                                    <input type="text" class="form-control" id="validemail" placeholder="Type your e-Mail" aria-describedby="inputGroupPrepend" required>
                                     <div class="invalid-feedback">
                                         Please fill your e-Mail.
                                     </div>
@@ -80,39 +81,38 @@
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationCustom03">City</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                <input type="text" class="form-control" id="city" placeholder="City" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="validationCustom04">State/Province</label>
-                                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                                <input type="text" class="form-control" id="province" placeholder="State" required>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state/.
+                                    Please provide a valid state/Province.
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="validationCustom05">Zip</label>
-                                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                                <input type="text" class="form-control" id="zipcode" placeholder="Zip" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid zip code.
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
                                 <label for="validationCustom05">Job/Project</label>
                                 <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">From</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">To</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-                                <div class="invalid-feedback">
-                                    Please provide a valid date range.
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="from">From</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="to">To</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                                 </div>
                             </div>
                         </div>
