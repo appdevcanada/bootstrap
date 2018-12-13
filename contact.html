@@ -33,69 +33,103 @@
         </div>
     </nav>
     <header>
-        <h3 class="text-center">Luis Henrique Souza</h3>
-        <div class="text-center" id="me_ctn"><img id="me" src="img/me.png" />
+        <h3 class="text-center">Contact for Hiring</h3>
+        <div class="text-center" id="me_ctn"><img class="rounded-circle" id="me" src="img/me.png" />
         </div>
     </header>
 
     <div class="container">
-
-        <!--
-        <div class="row my-5">
-            <div class="col col-lg-5">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, amet maiores blanditiis officiis at laudantium deserunt assumenda, doloremque expedita ut illum perspiciatis, dolorum est ab quibusdam, esse dignissimos. Optio, fugit.</p>
-            </div>
-
-        </div>
--->
-
         <div class="jumbotron pb-2 pt-2">
-            <h1 class="display-5">Technologies Learned</h1>
-            <!--            <p class="my-5 p-4 text-sm-left">ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quia nam necessitatibus nemo reprehenderit obcaecati culpa reiciendis eligendi ratione. At quia architecto voluptate perspiciatis quae quo deserunt, aliquid dignissimos natus.</p>-->
+            <h1 class="display-5">Contact Me!</h1>
             <hr class="my-2">
-            <p class="alg_jfy">Below you can see some of the technologies I've learned during this semester. All of them taught by experienced and master professors from Algonquin College.</p>
-
-            <!--            <button type="button" class="btn btn-primary btn-large">Click Me</button>-->
+            <p class="alg_jfy">If you need to know more about my jobs, experience, opportunities, projects, or want to hire me for a project, even as a freelancer, just fill this form up.</p>
         </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/HTML5.png" alt="HTML 5" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">Hypertext Markup Language revision 5 (HTML5) is markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and XHTML-style syntax and other new features in its markup, New APIs, XHTML and error handling. One of the design goals for HTML5 is to support for multimedia on mobile devices. New syntactic features were introduced to support this, such as video, audio and canvas tags. HTML5 also introduces new features which can really change the way users interact with documents.
+        <div class="card-deck">
+            <div class="card mb-3 border border-dark">
+                <img class="card-img-top p-1 rounded-top" src="img/contact.png" alt="Contact Me!">
+                <div class="card-body">
+                    <form class="needs-validation" novalidate id="form_val">
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">First Name</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Type your First name" value="" required>
+                                <div class="invalid-feedback">
+                                    Please provide your First name.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Last Name</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Type your Last name" value="" required>
+                                <div class="invalid-feedback">
+                                    Please provide your Last name.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustomUsername">e-Mail</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Type your e-Mail" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please fill your e-Mail.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">City</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom04">State/Province</label>
+                                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state/.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip code.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Job/Project</label>
+                                <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">From</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">To</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+                                <div class="invalid-feedback">
+                                    Please provide a valid date range.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" id="message" placeholder="Type your message here..." rows="4" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please fill your message to me.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit!</button>
+                    </form>
                 </div>
-            </div>
-        </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/CSS3.png" alt="CSS 3" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/js.png" alt="JavaScript" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles. JavaScript runs on the client side of the web, which can be used to design / program how the web pages behave on the occurrence of an event. JavaScript is an easy to learn and also powerful scripting language, widely used for controlling web page behaviour. NOTE: Contrary to popular misconception, JavaScript is not "Interpreted Java".
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/VMware.png" alt="VMWare" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">VMware is a virtualization and cloud computing software provider based in Palo Alto, California. Founded in 1998, VMware is a subsidiary of Dell Technologies. With VMware server virtualization, a hypervisor is installed on the physical server to allow for multiple virtual machines (VMs) to run on the same physical server. Each VM can run its own operating system (OS), which means multiple OSes can run on one physical server. All of the VMs on the same physical server share resources, such as networking and RAM.
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/AI.png" alt="Adobe Illustrator" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">Adobe Illustrator is a program used by both artists and graphic designers to create vector images. These images will then be used for company logos, promotional uses or even personal work, both in print and digital form. It is typically used to create illustrations, charts, graphs, logos, diagrams, cartoons of real photographs, and more. While the program may be difficult to understand initially, the final product will be well worth the learning curve.
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron pb-3 pt-3">
-            <div class="row align-items-center">
-                <div class="col-sm-4 col-md-3 text-center"><img class="img_std" src="img/PS.png" alt="Adobe PhotoShop" /></div>
-                <div class="col-sm-16 col-md-9 alg_jfy pt-3">Adobe Photoshop is an image editing software developed and manufactured by Adobe Systems Inc. Photoshop is considered one of the leaders in photo editing software. The software allows users to manipulate, crop, resize, and correct color on digital photos. The software is particularly popular amongst professional photographers and graphic designers. It is extensively used for raster image editing, graphic design and digital art. It makes use of layering to allow for depth and flexibility in the design and editing process, as well as provide powerful editing tools, that when combined, are capable of just about anything.
+                <div class="card-footer">
+                    <small class="text-muted">Thanks for your contact...</small>
                 </div>
             </div>
         </div>
@@ -103,6 +137,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                let forms = document.getElementsByClassName('needs-validation');
+                let validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+    </script>
 </body>
 
 </html>
